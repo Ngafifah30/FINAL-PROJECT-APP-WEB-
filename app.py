@@ -10,10 +10,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # API Configuration
-BMI_API_URL = ""
-GROQ_API_KEY = os.getenv("")
-MODEL = os.getenv("MODEL_NAME", "meta-llama/llama-4-maverick-17b-128e-instruct")
-LLM_URL = os.getenv("")
+BMI_API_URL = "https://hotelmerdekayapen.my.id/bmi/api/bmi"
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+MODEL = "meta-llama/llama-4-maverick-17b-128e-instruct"
+LLM_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 # Page config
 st.set_page_config(
